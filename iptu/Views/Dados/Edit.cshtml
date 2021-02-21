@@ -1,0 +1,64 @@
+﻿@model iptu.Models.Dados
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Dados</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="Ano" class="control-label"></label>
+                <input asp-for="Ano" class="form-control" />
+                <span asp-validation-for="Ano" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcordoAutoInfracao" class="control-label"></label>
+                <input asp-for="AcordoAutoInfracao" class="form-control" />
+                <span asp-validation-for="AcordoAutoInfracao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Processo" class="control-label"></label>
+                <input asp-for="Processo" class="form-control" />
+                <span asp-validation-for="Processo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Processando" class="control-label"></label>
+                <input asp-for="Processando" class="form-control" />
+                <span asp-validation-for="Processando" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Inscrito" class="control-label"></label>
+                <input asp-for="Inscrito" class="form-control" />
+                <span asp-validation-for="Inscrito" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Acordo" class="control-label"></label>
+                <input asp-for="Acordo" class="form-control" />
+                <span asp-validation-for="Acordo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Inclusao" class="control-label"></label>
+                <input asp-for="Inclusao" class="form-control" />
+                <span asp-validation-for="Inclusao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

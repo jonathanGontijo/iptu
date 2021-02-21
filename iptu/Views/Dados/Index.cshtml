@@ -1,0 +1,71 @@
+﻿@model IEnumerable<iptu.Models.Dados>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Ano)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AcordoAutoInfracao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Processo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Processando)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Inscrito)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acordo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Inclusao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ano)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AcordoAutoInfracao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Processo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Processando)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Inscrito)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Acordo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Inclusao)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -33,3 +33,8 @@ C:\Users\User\source\repos\iptu\iptu\obj\Debug\netcoreapp2.1\iptu.dll
 C:\Users\User\source\repos\iptu\iptu\obj\Debug\netcoreapp2.1\iptu.pdb
 C:\Users\User\source\repos\iptu\iptu\obj\Debug\netcoreapp2.1\iptu.genruntimeconfig.cache
 C:\Users\User\source\repos\iptu\iptu\obj\Debug\netcoreapp2.1\iptu.csproj.CopyComplete
+C:\Users\User\source\repos\iptu\iptu\obj\Debug\netcoreapp2.1\Razor\Views\Dados\Create.cshtml.g.cs
+C:\Users\User\source\repos\iptu\iptu\obj\Debug\netcoreapp2.1\Razor\Views\Dados\Delete.cshtml.g.cs
+C:\Users\User\source\repos\iptu\iptu\obj\Debug\netcoreapp2.1\Razor\Views\Dados\Details.cshtml.g.cs
+C:\Users\User\source\repos\iptu\iptu\obj\Debug\netcoreapp2.1\Razor\Views\Dados\Edit.cshtml.g.cs
+C:\Users\User\source\repos\iptu\iptu\obj\Debug\netcoreapp2.1\Razor\Views\Dados\Index.cshtml.g.cs
